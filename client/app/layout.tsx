@@ -1,5 +1,5 @@
 import "./globals.css";
-import logo from "../public/logo_50.png";
+import logo from "../public/logo.png";
 import Image from "next/image";
 
 export const metadata = {
@@ -35,7 +35,7 @@ export default function RootLayout({
           className={"flex flex-row justify-center items-center w-full mt-3"}
         >
           <a href={"/"}>
-            <Image src={logo} alt={"logo"} />
+            <Image height={90} width={90} src={logo} alt={"logo"} />
           </a>
         </header>
         {children}
