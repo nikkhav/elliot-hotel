@@ -1,6 +1,6 @@
 # Elliot Hotel
 
-Welcome to the README for Elliot Hotel, a pet project created by [Your Name]. This project is a simple website that showcases a fictional hotel named Elliot Hotel. The website includes information about the hotel's amenities, location, and pricing.
+Welcome to the README for Elliot Hotel, a pet project created by Nikita Khavkin. This project is a simple website that showcases a fictional hotel named Elliot Hotel. The website includes information about the hotel's amenities, location, and pricing.
 
 ## Getting Started
 
