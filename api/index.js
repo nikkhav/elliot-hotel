@@ -4,9 +4,6 @@ const app = express();
 const mongoose = require("mongoose");
 const morgan = require("morgan");
 
-app.listen(PORT, () => {
-  console.log("Server is running");
-});
 // Middlewares
 app.use(morgan("dev"));
 app.use(express.json());

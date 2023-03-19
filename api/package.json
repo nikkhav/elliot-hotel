@@ -1,14 +1,19 @@
 {
-  "name": "elliot-hotel-api",
+  "name": "elliot-hotel",
   "version": "1.0.0",
-  "main": "app.js",
+  "description": "Welcome to the README for Elliot Hotel, a pet project created by Nikita Khavkin. This project is a simple website that showcases a fictional hotel named Elliot Hotel. The website includes information about the hotel's amenities, location, and pricing.",
+  "main": "index.js",
   "scripts": {
-    "start": "npm install && node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon server.js"
   },
-  "license": "MIT",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
     "express": "^4.18.2",
-    "morgan": "^1.10.0"
+    "mongoose": "^7.0.2",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.21"
   }
 }
