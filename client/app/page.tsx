@@ -30,7 +30,6 @@ export default function Home() {
               "text-7xl font-playfair text-white absolute top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2"
             }
           >
-            {" "}
             Добро пожаловать в <br /> Elliot Hotel!
           </h3>
         </div>
