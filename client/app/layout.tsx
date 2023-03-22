@@ -1,5 +1,7 @@
 import "./globals.css";
 import logo from "../public/logo.png";
+import googleplay from "../public/google-play.svg";
+import appstore from "../public/appstore.svg";
 import Image from "next/image";
 
 export const metadata = {
@@ -71,6 +73,83 @@ export default function RootLayout({
           </a>
         </header>
         {children}
+        <footer
+          className={
+            "flex flex-col justify-center items-center w-full mt-20 p-10 bg-[#2c2c24]"
+          }
+        >
+          <div
+            className={
+              "flex flex-row justify-center items-center w-10/12 border-b-2"
+            }
+          >
+            <Image src={logo} alt={"logo"} height={200} width={200} />
+          </div>
+          <div
+            className={
+              "flex flex-row justify-between items-center mt-10 w-10/12"
+            }
+          >
+            <a
+              className={
+                "text-lg text-white font-montserrat transition-transform ease-in-out hover:scale-110"
+              }
+              href={"https://www.instagram.com"}
+            >
+              Instagram
+            </a>
+            <a
+              className={
+                "text-lg text-white font-montserrat transition-transform ease-in-out hover:scale-110"
+              }
+              href={"https://www.facebook.com/"}
+            >
+              Facebook
+            </a>
+            <a
+              className={
+                "text-lg text-white font-montserrat transition-transform ease-in-out hover:scale-110"
+              }
+              href={"https://web.telegram.org/k/"}
+            >
+              Telegram
+            </a>
+            <a
+              className={
+                "text-lg text-white font-montserrat transition-transform ease-in-out hover:scale-110"
+              }
+              href={"https://www.whatsapp.com/?lang=ru"}
+            >
+              WhatsApp
+            </a>
+          </div>
+          <div className={"flex flex-row justify-center mt-16 w-1/2"}>
+            <a href={"https://play.google.com/store/games?hl=ru"}>
+              <Image
+                src={googleplay}
+                alt={"Google play"}
+                height={50}
+                width={138}
+                className={"mx-4"}
+              />
+            </a>
+            <a href={"https://www.apple.com/de/app-store/"}>
+              <Image
+                src={appstore}
+                alt={"App store"}
+                height={50}
+                width={150}
+                className={"mx-4"}
+              />
+            </a>
+          </div>
+          <div className={"flex flex-col justify-center items-center mt-10"}>
+            <p className={"text-white font-montserrat"}>
+              Made by Khavkin Nikita
+            </p>
+            <p className={"text-white font-montserrat"}> 2023 {""}</p>
+          </div>
+        </footer>
       </body>
     </html>
   );

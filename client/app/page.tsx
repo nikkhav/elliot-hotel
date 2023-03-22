@@ -27,7 +27,7 @@ export default function Home() {
           </h4>
           <h3
             className={
-              "text-6xl font-playfair text-white absolute top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2"
+              "text-7xl font-playfair text-white absolute top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2"
             }
           >
             {" "}
@@ -69,7 +69,7 @@ export default function Home() {
         imageAlt={"Food"}
       />
       <InfoBlock
-        title={"СПА & ВЕЛНЕС"}
+        title={"Spa & Wellness"}
         subtitle={"Все Для Гармонии Души и Тела"}
         text={
           "Сауна, хаммам, различные виды массажа, аюрведические процедуры и косметические процедуры помогут вам в лучшем настроении в отеле Elliot Hotel."
