@@ -1,5 +1,10 @@
 import vacation from "../public/main-vacation.jpg";
 import Image from "next/image";
+import InfoBlock from "@/components/InfoBlock";
+import room from "../public/rooms-info.webp";
+import food from "../public/food-info.webp";
+import spa from "../public/spa-info.webp";
+import pool from "../public/pool-info.webp";
 
 export default function Home() {
   return (
@@ -30,6 +35,59 @@ export default function Home() {
           </h3>
         </div>
       </div>
+      <div className={"flex flex-col items-center bg-[#2c2c24] my-5 p-8"}>
+        <h2 className={"text-4xl mt-4 text-white font-montserrat"}>
+          Незабываемый отдых в Elliot Hotel
+        </h2>
+        <p className={"text-xl mt-8 text-white text-center font-montserrat"}>
+          Elliot Hotel один из лучших люкс отелей ультра все включено,
+          находящийся на берегу Средиземного моря. Elliot Hotel расположен в
+          самом сердце солнечного города Сиде Анталья, в чрезвычайно
+          характерном, тихом и оживленном районе, в нескольких минутах ходьбы от
+          всех достопримечательностей. Отель Elliot готов встретить вас и
+          подарить вам незабываемые каникулы на протяжении всего года.
+        </p>
+      </div>
+      <InfoBlock
+        title={"Размещение"}
+        subtitle={"Виды Наших Комфортных Номеров"}
+        text={
+          "В номерах и люксах Elliot Hotel царит ощущение домашнего уюта и комфорта. Элегантные и уютные, они ориентированы на обеспечение всех удобств, чтобы сделать ваше пребывание незабываемым. Elliot Hotel предлагает 4 вида комфортного размещения: номера Улучшенный Супериор, Делюкс, Люкс и Стандарт."
+        }
+        photoAlign={"left"}
+        image={room}
+        imageAlt={"Room"}
+      />
+      <InfoBlock
+        title={"Вкусы"}
+        subtitle={"Изысканные Кухни Мира"}
+        text={
+          "Насладитесь необыкновенным кулинарным опытом, подчеркнутым вкусами международной кухни, которые подают наши шеф-повара, чья страсть к еде проявляется в каждом поданом блюде."
+        }
+        photoAlign={"right"}
+        image={food}
+        imageAlt={"Food"}
+      />
+      <InfoBlock
+        title={"СПА & ВЕЛНЕС"}
+        subtitle={"Все Для Гармонии Души и Тела"}
+        text={
+          "Сауна, хаммам, различные виды массажа, аюрведические процедуры и косметические процедуры помогут вам в лучшем настроении в отеле Elliot Hotel."
+        }
+        photoAlign={"left"}
+        image={spa}
+        imageAlt={"Spa"}
+      />
+      <InfoBlock
+        title={"Крытый бассейн"}
+        subtitle={"ПОЧУВСТВУЙТЕ ЛЕТО ЗИМОЙ"}
+        text={
+          "Находящийся в Elliot Hotel, крытый бассейн придаст вашему зимнему отдыху иную атмосферу, полную умиротворения. Несмотря на невзгоды погоды, у нас есть прекрасная альтернатива - крытый бассейн с подогревом до 30-и градусов. "
+        }
+        photoAlign={"right"}
+        image={pool}
+        imageAlt={"Swimming pool"}
+      />
     </main>
   );
 }

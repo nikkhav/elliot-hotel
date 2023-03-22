@@ -25,17 +25,49 @@ export default function RootLayout({
           crossOrigin={""}
         />
         <link
-          href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display:wght@600&display=swap"
           rel="stylesheet"
         />
         <title>{metadata.title}</title>
       </head>
       <body>
         <header
-          className={"flex flex-row justify-center items-center w-full mt-3"}
+          className={"flex flex-row justify-around items-center w-full mt-3"}
         >
+          <a
+            className={
+              "text-lg font-montserrat border-b-2 border-b-white transition-colors ease-in-out delay-150 hover:border-b-black"
+            }
+            href={"/"}
+          >
+            Номера
+          </a>
+          <a
+            className={
+              "text-lg font-montserrat border-b-2 border-b-white transition-colors ease-in-out delay-150 hover:border-b-black"
+            }
+            href={"/"}
+          >
+            Бронирование
+          </a>
           <a href={"/"}>
             <Image height={90} width={90} src={logo} alt={"logo"} />
+          </a>
+          <a
+            className={
+              "text-lg font-montserrat border-b-2 border-b-white transition-colors ease-in-out delay-150 hover:border-b-black"
+            }
+            href={"/"}
+          >
+            Контакты
+          </a>
+          <a
+            className={
+              "text-lg font-montserrat border-b-2 border-b-white transition-colors ease-in-out delay-150 hover:border-b-black"
+            }
+            href={"/"}
+          >
+            Отзывы
           </a>
         </header>
         {children}
